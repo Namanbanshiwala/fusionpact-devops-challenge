@@ -1,6 +1,16 @@
-# 🚀 DevOps Internship Task — Fusionpact DevOps Internship Program 2026
+# 🚀 Fusionpact DevOps Internship Program 2026 — Task
 
-**⚠️ Task (Do not treat this as a guide)**
+![Fusionpact Logo](https://www.fusionpact.com/wp-content/uploads/2023/04/fusionpact-logo.png)
+
+**🌟 Company:** Fusionpact Technology  
+**💻 Role:** DevOps Internship  
+**⏳ Duration:** 6 Months  
+**📧 Contact:** [kiran.rakh@fusionpact.com](mailto:kiran.rakh@fusionpact.com)  
+**🌐 Website:** [fusionpact.com](https://www.fusionpact.com)
+
+---
+
+## ⚠️ Task Instructions (Do Not Treat This As a Guide)
 
 You have applied for the DevOps intern role. Your task is to:
 
@@ -8,7 +18,7 @@ You have applied for the DevOps intern role. Your task is to:
 
 ### 📝 Tasks to Complete
 
-1. **Fork this repository.**  
+1. **Fork this repository**  
 2. **Dockerize this application using Docker and Docker Compose**  
    *(frontend, backend, and database containers)*  
 3. **Ensure data entered via the frontend is saved to the database**  
@@ -28,13 +38,32 @@ You have applied for the DevOps intern role. Your task is to:
 
 ---
 
-### 🔗 Resources (for your reference only)
+### 🔗 Optional References
 
-- [Docker Documentation](https://docs.docker.com/)  
-- [Docker Compose Documentation](https://docs.docker.com/compose/)  
+| Technology | Reference |
+|-----------|-----------|
+| Docker | [https://docs.docker.com/](https://docs.docker.com/) |
+| Docker Compose | [https://docs.docker.com/compose/](https://docs.docker.com/compose/) |
+| React | [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html) |
+| Express | [https://expressjs.com/en/starter/installing.html](https://expressjs.com/en/starter/installing.html) |
+| PostgreSQL | [https://www.postgresql.org/docs/](https://www.postgresql.org/docs/) |
+
+---
+
+### 🌟 Fusionpact Highlights
+
+- **Innovation-driven culture**: Hands-on exposure to cloud, CI/CD, containers, and monitoring  
+- **Mentorship & growth**: Learn from industry experts  
+- **Team & collaboration**: Work alongside other interns and full-time engineers  
+- **Work-life balance**: Flexible hours, wellness programs, and tech events  
 
 ---
 
 ### ⚡ Note
 
-Completing this task **demonstrates your ability to containerize applications, manage data persistence, and deploy multi-service applications using Docker Compose.**
+Completing this task **demonstrates your ability to containerize applications, manage data persistence, and deploy multi-service applications using Docker Compose.**  
+Your submission will help Fusionpact assess your **industry readiness as a DevOps professional**.
+
+---
+
+**Good luck! 🚀**
