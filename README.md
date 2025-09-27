@@ -1,10 +1,4 @@
-# 🌐 Fusionpact DevOps Internship Program 2026
-
-<p align="center">
-  **FusionPact Technology**
-</p>
-  
-Hands-on experience with **Cloud, Containers, CI/CD & Monitoring**
+# 🌐 Fusionpact DevOps Internship Program
 
 ---
 
