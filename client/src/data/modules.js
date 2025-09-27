@@ -1,0 +1,8 @@
+export default [
+  { id: 'month1', title:'Month 1 – Foundations', subtitle:'Linux CLI · Bash · Git', bullets:[ 'Linux navigation, filesystem, permissions','Bash scripting for automation (cron jobs, parsing logs)','Git workflows, branching, PRs and commit hygiene' ], links: [ {name:'Linux CLI', url:'https://linuxjourney.com/'}, {name:'Git', url:'https://git-scm.com/doc'} ] },
+  { id: 'month2', title:'Month 2 – Cloud & IaC', subtitle:'AWS/GCP · Terraform', bullets:[ 'Cloud fundamentals and services','Terraform basics, modules, state & best practices' ], links: [ {name:'AWS', url:'https://aws.amazon.com/training/'}, {name:'Terraform', url:'https://developer.hashicorp.com/terraform/tutorials'} ] },
+  { id: 'month3', title:'Month 3 – Containerization', subtitle:'Docker · Compose', bullets:[ 'Dockerfile best practices','Compose for multi-container dev stacks' ], links: [ {name:'Docker', url:'https://docs.docker.com/get-started/'} ] },
+  { id: 'month4', title:'Month 4 – CI/CD', subtitle:'Jenkins · Pipelines', bullets:[ 'CI/CD concepts','Jenkins pipelines' ], links: [ {name:'Jenkins', url:'https://www.jenkins.io/doc/'} ] },
+  { id: 'month5', title:'Month 5 – Monitoring & Logging', subtitle:'Prometheus · Grafana · ELK', bullets:[ 'Instrument apps with metrics','Grafana dashboards & alerting' ], links: [ {name:'Prometheus', url:'https://prometheus.io/docs/introduction/overview/'} ] },
+  { id: 'month6', title:'Month 6 – Capstone', subtitle:'Kubernetes · Full Pipeline', bullets:[ 'Design microservice architecture','End-to-end CI/CD' ], links: [ {name:'Kubernetes', url:'https://kubernetes.io/docs/tutorials/'} ] }
+];
