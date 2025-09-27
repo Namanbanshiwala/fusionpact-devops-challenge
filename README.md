@@ -1,10 +1,9 @@
 # 🌐 Fusionpact DevOps Internship Program 2026
 
 <p align="center">
-  <img src="./3f380080-7b07-42fb-9bf9-74092e4da880.png" alt="Fusionpact Logo" width="150" />
+  **FusionPact Technology**
 </p>
-
-**Become Industry-Ready DevOps Professionals 🚀**  
+  
 Hands-on experience with **Cloud, Containers, CI/CD & Monitoring**
 
 ---
