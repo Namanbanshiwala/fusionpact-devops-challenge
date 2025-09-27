@@ -1,6 +1,8 @@
 # 🌐 Fusionpact DevOps Internship Program 2026
 
-![Fusionpact Logo](https://static.wixstatic.com/media/df268a_ba3a0424da114e218ff68ce998cd7217~mv2.png/v1/fit/w_2500,h_1330,al_c/df268a_ba3a0424da114e218ff68ce998cd7217~mv2.png)
+<p align="center">
+  <img src="./3f380080-7b07-42fb-9bf9-74092e4da880.png" alt="Fusionpact Logo" width="150" />
+</p>
 
 **Become Industry-Ready DevOps Professionals 🚀**  
 Hands-on experience with **Cloud, Containers, CI/CD & Monitoring**
@@ -50,17 +52,4 @@ Your task:
 - [Docker Docs](https://docs.docker.com/)  
 - [Docker Compose Docs](https://docs.docker.com/compose/)  
 - [React Docs](https://reactjs.org/docs/getting-started.html)  
-- [Express Docs](https://expressjs.com/en/starter/installing.html)  
-- [PostgreSQL Docs](https://www.postgresql.org/docs/)  
-
----
-
-### ⚡ Final Note
-
-This task is a **demonstration of your DevOps skills**.  
-
-- ✅ Containerize the full application  
-- ✅ Ensure database persistence  
-- ✅ Submit your repository and short validation note  
-
-**Good luck & build like a pro! 🚀**
+- [Express Docs](https)
