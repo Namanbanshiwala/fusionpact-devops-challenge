@@ -7,33 +7,25 @@ Hands-on experience with **Cloud, Containers, CI/CD & Monitoring**
 
 ---
 
-## 🏢 Company Info
-
-| Info | Details |
-|------|---------|
-| **Company** | Fusionpact Technology |
-| **Role** | DevOps Intern |
-| **Duration** | 6 Months |
-| **Contact** | [kiran.rakh@fusionpact.com](mailto:kiran.rakh@fusionpact.com) |
-| **Website** | [https://www.fusionpact.com](https://www.fusionpact.com) |
-
----
-
 ## ⚠️ Task Instructions (Do Not Treat as Guide)
 
-### 📝 What You Need to Do
+You have applied for the **DevOps Intern** role.  
 
-1. Fork this repository  
-2. Dockerize this application using **Docker & Docker Compose**  
-   - Frontend, Backend, and Database containers  
-3. Ensure data entered via the frontend is **saved to the database and persists after container restarts**  
-4. Submit your solution by replying to the **same email** you received this task from:  
-   - Provide **link to your fork**  
-   - Include a **short paragraph** explaining how you validated data persistence
+Your task:
+
+- Fork this repository.  
+- Dockerize this application using **Docker & Docker Compose**  
+  - Frontend, Backend, and Database containers  
+- Ensure data entered via the frontend is **saved to the database and persists after container restarts**  
+- Submit your solution by replying to the **same email** you received this task from:  
+  - Include **link to your forked repository**  
+  - Include a **short paragraph** explaining how you validated data persistence  
+
+> This README is a **task only**. It intentionally does not include step-by-step instructions or implementation guidance.
 
 ---
 
-### 🛠 Technologies Involved
+## 🛠 Technologies Involved
 
 - ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) React (Frontend)  
 - ![Node](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) Express (Backend)  
@@ -55,21 +47,20 @@ Hands-on experience with **Cloud, Containers, CI/CD & Monitoring**
 
 ### 🔗 Optional References
 
-| Technology | Link |
-|-----------|------|
-| Docker | [Docs](https://docs.docker.com/) |
-| Docker Compose | [Docs](https://docs.docker.com/compose/) |
-| React | [Docs](https://reactjs.org/docs/getting-started.html) |
-| Express | [Docs](https://expressjs.com/en/starter/installing.html) |
-| PostgreSQL | [Docs](https://www.postgresql.org/docs/) |
+- [Docker Docs](https://docs.docker.com/)  
+- [Docker Compose Docs](https://docs.docker.com/compose/)  
+- [React Docs](https://reactjs.org/docs/getting-started.html)  
+- [Express Docs](https://expressjs.com/en/starter/installing.html)  
+- [PostgreSQL Docs](https://www.postgresql.org/docs/)  
 
 ---
 
-### ⚡ Note
+### ⚡ Final Note
 
 This task is a **demonstration of your DevOps skills**.  
-✅ Containerize the full application  
-✅ Ensure database persistence  
-✅ Submit your repository and short validation note  
+
+- ✅ Containerize the full application  
+- ✅ Ensure database persistence  
+- ✅ Submit your repository and short validation note  
 
 **Good luck & build like a pro! 🚀**
