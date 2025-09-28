@@ -1,6 +1,5 @@
 # 🌐 Fusionpact DevOps Internship Program
 
----
 
 ## ⚠️ Task Instructions (Do Not Treat as Guide)
 
