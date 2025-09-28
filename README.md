@@ -12,9 +12,17 @@ Your task:
 - Dockerize this application using **Docker & Docker Compose**  
   - Frontend, Backend, and Database containers  
 - Ensure data entered via the frontend is **saved to the database and persists after container restarts**  
-- Submit your solution by replying to the **same email** you received this task from:  
-  - Include **link to your forked repository**  
-  - Include a **short paragraph** explaining how you validated data persistence  
+- 📸 While completing this task, you must **create a detailed SOP (Standard Operating Procedure)** similar to the example provided.  
+  - Include **step-by-step commands** you executed.  
+  - Add **screenshots of each major step** (e.g., container build, deployment, database verification).  
+  - This SOP must **not** be added to your repository.  
+- 📨 After completing the task, reply to the **same email** you received this task from and include:  
+  - ✅ The **GitHub repository URL** (your forked version)  
+  - ✅ A **short paragraph** explaining how you verified data persistence  
+  - ✅ The **SOP document as an attachment** (PDF )
+
+> 🧠 **Reminder:** The SOP is a required part of the submission. It helps us evaluate your documentation skills along with your technical work.
+
 
 > This README is a **task only**. It intentionally does not include step-by-step instructions or implementation guidance.
 
