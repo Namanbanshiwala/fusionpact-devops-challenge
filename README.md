@@ -1,6 +1,5 @@
 # 🌐 Fusionpact DevOps Internship Program
-
-
+---
 ## ⚠️ Task Instructions (Do Not Treat as Guide)
 
 You have applied for the **DevOps Intern** role.  
@@ -11,6 +10,8 @@ Your task:
 - Dockerize this application using **Docker & Docker Compose**  
   - Frontend, Backend, and Database containers  
 - Ensure data entered via the frontend is **saved to the database and persists after container restarts**  
+- ☁️ **Important:** You must complete this task by deploying the solution on a **cloud server** of your choice — such as **AWS, Azure, or Google Cloud Platform (GCP)**.  
+  - ❌ **Local setup is not allowed**. Your application must be deployed and running in a real cloud environment.  
 - 📸 While completing this task, you must **create a detailed SOP (Standard Operating Procedure)** similar to the example provided.  
   - Include **step-by-step commands** you executed.  
   - Add **screenshots of each major step** (e.g., container build, deployment, database verification).  
@@ -18,9 +19,11 @@ Your task:
 - 📨 After completing the task, reply to the **same email** you received this task from and include:  
   - ✅ The **GitHub repository URL** (your forked version)  
   - ✅ A **short paragraph** explaining how you verified data persistence  
-  - ✅ The **SOP document as an attachment** (PDF )
+  - ✅ The **SOP document as an attachment** (PDF or Markdown)
 
-> 🧠 **Reminder:** The SOP is a required part of the submission. It helps us evaluate your documentation skills along with your technical work.
+> 🧠 **Reminder:**  
+> - Completing the deployment on a real cloud environment is **mandatory**.  
+> - Submissions without a cloud deployment and SOP document will **not be evaluated**.
 
 
 > This README is a **task only**. It intentionally does not include step-by-step instructions or implementation guidance.
