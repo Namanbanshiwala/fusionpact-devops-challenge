@@ -41,7 +41,7 @@ Focus on production-ready deployment and ensuring data integrity.
 | **3. Persistence** | The backend currently uses a local JSON file for data storage. **You must ensure this data persists** across container restarts. *Bonus points for migrating to a dedicated database container (PostgreSQL/MySQL) and updating the backend service.* |
 | **4. Deployment** | Deploy the entire stack using your orchestrator (`docker-compose` or equivalent YAML/config) onto a **Cloud Server/Service** (e.g., EC2, Cloud Run, App Service). |
 
-📦 **Deliverables:** Live Public URL, `Dockerfile` (x2), `docker-compose.yml`.
+📦 **Deliverables:** The `Dockerfile` (x2) and `docker-compose.yml` files.
 
 ---
 
@@ -68,7 +68,7 @@ Automate the process for rapid, reliable software delivery.
 | **1. Tool Selection** | Implement the pipeline using your preferred tool (e.g., **GitHub Actions**, **GitLab CI**, **Jenkins**). |
 | **2. Pipeline Stages** | Define a pipeline that includes the following stages on a push to the main branch: **Code Checkout** -> **Linting/Testing** -> **Docker Build** -> **Image Push to Registry** -> **Rolling Deployment** to the cloud environment. |
 
-📦 **Deliverables:** CI/CD pipeline configuration file (e.g., `.github/workflows/main.yml`), Screenshot of a successful pipeline run.
+📦 **Deliverables:** CI/CD pipeline configuration file (e.g., **`Jenkinsfile`** or **`.github/workflows/main.yml`**), Screenshot of a successful pipeline run.
 
 ---
 
@@ -79,13 +79,14 @@ Failure to meet the submission format will result in non-evaluation.
 1.  **Fork** this repository and push your complete solution to your own GitHub account.
 2.  **SOP Document:** Create a **detailed Standard Operating Procedure (SOP)** (PDF or Markdown format is preferred). This SOP must include:
     * The **architectural rationale** for your cloud service choices.
-    * **All commands** executed during setup.
-    * **Screenshots** verifying every major stage (deployment console, persistence test, monitoring setup).
+    * All commands executed during setup.
+    * Screenshots verifying every major stage (Cloud Deployment Console, Persistence Test, Monitoring Setup, Successful Pipeline Run).
 3.  **Email Submission:** Reply to the original task email and include:
-    * ✅ Your **GitHub Repository URL**
+    * ✅ Your **GitHub Repository URL** (the forked version).
     * ✅ A **short paragraph** summarizing your data persistence solution (Level 1).
     * ✅ The **SOP document as an attachment** (Do NOT commit to the repo).
-    * ✅ Live URLs for the application and monitoring dashboards.
+
+⚠️ **Important:** The SOP document **must not** be included in your repository.
 
 ---
 
