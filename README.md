@@ -1,137 +1,110 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/your-org/assets/main/fusionpact-hero.gif" width="350"/>
+  <img src="https://raw.githubusercontent.com/Fusionpact-Org/assets/main/fusionpact-hero.gif" alt="Fusionpact Hero Banner" width="350"/>
 </p>
 
-<h1 align="center">🌟 Fusionpact DevOps Assessment Challenge 2026</h1>
+<h1 align="center">🌟 Fusionpact DevOps Gauntlet: Assessment 2026</h1>
 
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/CI-Passing-brightgreen?style=for-the-badge&logo=github&logoColor=white" title="CI Status"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Docker-Built-blue?style=for-the-badge&logo=docker&logoColor=white" title="Docker"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Cloud-AWS-orange?style=for-the-badge&logo=amazon-aws&logoColor=white" title="Cloud"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Monitoring-Prometheus-red?style=for-the-badge&logo=prometheus&logoColor=white" title="Monitoring"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Grafana-Visualize-yellow?style=for-the-badge&logo=grafana&logoColor=black" title="Grafana"/></a>
+  <img src="https://img.shields.io/badge/Status-Cloud--Ready-brightgreen?style=for-the-badge&logo=googles-cloud&logoColor=white" title="Project Status"/>
+  <img src="https://img.shields.io/badge/Container-Docker--Required-blue?style=for-the-badge&logo=docker&logoColor=white" title="Docker"/>
+  <img src="https://img.shields.io/badge/CI/CD-Automation--Focus-red?style=for-the-badge&logo=githubactions&logoColor=white" title="CI/CD"/>
+  <img src="https://img.shields.io/badge/Observability-Mandatory-yellowgreen?style=for-the-badge&logo=grafana&logoColor=white" title="Monitoring"/>
 </p>
 
 ---
 
-## 💡 About This Challenge
+## 🎯 MISSION BRIEFING: The Challenge
 
-> Welcome to **Fusionpact DevOps Challenge 2026**!  
-> Test your **end-to-end DevOps skills**: cloud deployment, observability, and automated CI/CD.
+Welcome to the **Fusionpact DevOps Gauntlet**! This is your final opportunity to prove your mastery of modern cloud engineering. Your task is to take this two-tier application stack and transform it into a **fault-tolerant, observable, and automated production system** in the cloud.
 
-> ⚡ Think like a professional DevOps engineer. Automation + monitoring + reliability = 🏆.
-
----
-
-## 🖥️ Application Stack
+### 💻 Application Stack Overview
 
 | Component | Technology | Directory | Key Feature |
-|-----------|-----------|-----------|------------|
-| 🖼️ **Frontend** | HTML / CSS | `./frontend/` | Internship Landing Page |
-| ⚡ **Backend** | Python FastAPI | `./backend/` | User Data + Prometheus `/metrics` |
-
-> Mission: Fully **cloud-deployed, persistent, and observable** stack.
+| :--- | :--- | :--- | :--- |
+| 🖼️ **Frontend** | HTML / CSS | `./frontend/` | Internship Landing Page (Requires lightweight serving) |
+| ⚡ **Backend** | Python **FastAPI** | `./backend/` | REST API, Data Handling, and **Prometheus `/metrics`** endpoint |
 
 ---
 
-## ⚠️ Mandatory Requirements
+## 🚨 MANDATORY EXECUTION PROTOCOL
 
-> 🚨 **Public cloud deployment required** (AWS / GCP / Azure)  
-
-<div style="background-color:#fff4e6;padding:10px;border-left:5px solid #ff9900;">
-💡 SOP must include: <br>
-✔ Commands used <br>
-✔ Screenshots (deployment, persistence, monitoring, pipeline) <br>
-✔ Verification steps
+<div style="background-color:#ffe6e6;padding:15px;border-left:6px solid #ff4d4d;border-radius:5px;">
+  <p style="font-size:1.1em;font-weight:bold;margin-top:0;">🛑 NON-NEGOTIABLE REQUIREMENTS</p>
+  <ul>
+    <li>**Cloud-Only Deployment:** ❌ Local setup is strictly forbidden. The entire solution must be deployed on a public cloud service (AWS, GCP, or Azure).</li>
+    <li>**SOP DOCUMENTATION:** A comprehensive, professional **SOP (Standard Operating Procedure)** is required for full evaluation.</li>
+  </ul>
 </div>
 
 ---
 
-## 🏆 Task Levels
+## 🏆 THE GAUNTLET: Three Levels of Mastery
 
-### 🥇 Level 1: Containerization & Cloud Deployment
+### 🥇 Level 1: Cloud & Data Sovereignty (30%)
 <div style="background-color:#e6f7ff;padding:12px;border-radius:8px;border-left:6px solid #0099ff;">
-🚀 Focus: Production-ready deployment + persistent backend
+  🚀 **Focus:** Production-ready deployment and ensuring data integrity.
 </div>
 
-**Key Actions:**  
-- Dockerize Frontend & Backend  
-- Orchestrate using `docker-compose.yml`  
-- Ensure Data Persistence (optional DB migration to PostgreSQL/MySQL)  
-- Deploy on Cloud VM / Managed Service  
+| Action | Execution Focus |
+| :--- | :--- |
+| **1. Containerization** | Write **optimized, multi-stage** `Dockerfile`s for **Frontend** and **Backend**. |
+| **2. Orchestration** | Define the multi-service environment using a robust **`docker-compose.yml`**. |
+| **3. Persistence** | **CRITICAL:** Solve the file-based storage weakness. Ensure data **persists** across container restarts. *(High credit for migrating to a dedicated DB container like PostgreSQL/MySQL).* |
+| **4. Cloud Launch** | Deploy the entire stack using your orchestrator onto a **Cloud Server/Service**. |
 
-📦 **Deliverables:** `Dockerfile`s + `docker-compose.yml`  
-
-**Demo Frontend:**  
-[![Frontend GIF](https://raw.githubusercontent.com/your-org/assets/main/frontend-demo.gif)](https://your-frontend-demo-link.com)  
-
-**Demo Backend:**  
-[![Backend GIF](https://raw.githubusercontent.com/your-org/assets/main/backend-demo.gif)](https://your-backend-demo-link.com)  
+📦 **Deliverables:** Optimized `Dockerfile`s, complete `docker-compose.yml`.
 
 ---
 
-### 🥈 Level 2: Monitoring & Observability
+### 🥈 Level 2: Observability & Insight (30%)
 <div style="background-color:#fff0f6;padding:12px;border-radius:8px;border-left:6px solid #ff4d6d;">
-📊 Focus: Full observability of system & app metrics
+  📊 **Focus:** Full observability of system and application metrics.
 </div>
 
-**Key Actions:**  
-- Integrate Prometheus to scrape backend & system metrics  
-- Capture API requests, latency, errors via `/metrics`  
-- Build Grafana Dashboards:  
-  1️⃣ **System Health** – CPU, Memory, Disk I/O  
-  2️⃣ **Application Performance Monitoring (APM)**  
+| Action | Execution Focus |
+| :--- | :--- |
+| **1. Metrics Engine** | Deploy **Prometheus** and configure its scraping jobs to correctly target the backend's `/metrics`. |
+| **2. Visualization** | Deploy **Grafana**. Design is key—dashboards must be professional and insightful. |
+| **3. Dashboard Design** | Create **two high-impact dashboards**: one for **Infrastructure Health** (Host/Container CPU/Memory/Disk I/O) and one for **Application Performance Monitoring (APM)** (API Latency, Request Rate, Error Counts). |
 
-📦 **Deliverables:** `prometheus.yml` + Grafana screenshots  
-
-**Demo Dashboards:**  
-[![System Health](https://raw.githubusercontent.com/your-org/assets/main/system-dashboard.gif)](https://your-grafana-link.com)  
-[![APM Dashboard](https://raw.githubusercontent.com/your-org/assets/main/apm-dashboard.gif)](https://your-grafana-link.com)  
+📦 **Deliverables:** Clean `prometheus.yml` configuration, **Screenshots of the working Grafana Dashboards.**
 
 ---
 
-### 🥉 Level 3: CI/CD Automation
+### 🥉 Level 3: Zero-Touch Automation (30%)
 <div style="background-color:#f0fff0;padding:12px;border-radius:8px;border-left:6px solid #33cc33;">
-⚙️ Focus: Fully automated deployment pipeline
+  ⚙️ **Focus:** Implementing a reliable, automated CI/CD pipeline.
 </div>
 
-**Pipeline Steps:**  
-- Checkout Code  
-- Lint / Unit Tests  
-- Docker Build  
-- Push to Registry  
-- Rolling Deployment  
+| Action | Execution Focus |
+| :--- | :--- |
+| **1. CI/CD Platform** | Choose your weapon: **Jenkins**, **GitHub Actions**, or **GitLab CI/CD**. |
+| **2. Pipeline Logic** | The pipeline must include: **Checkout** ➡️ **Lint/Test** ➡️ **Docker Build** ➡️ **Image Push to Registry** ➡️ **Automated Deployment/Update** in the cloud. |
+| **3. Artifacts** | Ensure proper versioning and use of a container registry (Docker Hub, ECR, GCR). |
 
-📦 **Deliverables:** Pipeline config + successful run screenshot  
-
-**Demo Pipeline:**  
-[![Pipeline GIF](https://raw.githubusercontent.com/your-org/assets/main/pipeline-demo.gif)](https://your-ci-demo-link.com)  
+📦 **Deliverables:** The complete CI/CD configuration file (e.g., **`Jenkinsfile`** or **`.github/workflows/main.yml`**), Screenshot of a verified successful pipeline run.
 
 ---
 
-## 📑 Submission Instructions
+## 📧 SUBMISSION PROTOCOL
 
-1. **Fork** repo & push solution  
-2. **SOP Document** (PDF/Markdown) with all commands, screenshots, verification  
-3. **Email Submission:**  
-   - GitHub Repo URL ✅  
-   - Data persistence summary (Level 1) ✅  
-   - SOP document ✅  
+Your submission must be a single, professional package.
 
-> 💡 **Tip:** Include **deployment, monitoring, and CI/CD screenshots**.
+1.  **Fork** the repository and push your complete solution (Docker files, CI/CD scripts) to your account.
+2.  **SOP Document:** Prepare your **detailed SOP** (PDF or Markdown). This document must include:
+    * **The Architectural Rationale:** Justify your choice of cloud services (e.g., why Kubernetes vs. EC2).
+    * All commands executed and **Screenshots** verifying every major stage.
+3.  **Email Reply:** Reply to the original task email with the following:
+    * ✅ Your **GitHub Repository URL**.
+    * ✅ A short paragraph explaining the mechanism you used to **verify data persistence** (Level 1).
+    * ✅ The **SOP document as a single, attached file**.
 
----
-
-## 🌐 Useful Links
-
-- [Prometheus Docs](https://prometheus.io/docs/introduction/overview/)  
-- [Grafana Docs](https://grafana.com/docs/)  
-- [Docker Docs](https://docs.docker.com/)  
+> ⚠️ **FINAL CHECK:** Submissions will be rejected if the deployment is not in the cloud or if the SOP is missing.
 
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/your-org/assets/main/devops-fun.gif" width="400"/>
+  <img src="https://raw.githubusercontent.com/Fusionpact-Org/assets/main/devops-fun.gif" alt="DevOps Fun GIF" width="400"/>
 </p>
 
-> 🚀 **Good Luck!** Showcase **reliability, observability, and automated cloud deployments** like a pro.
+> 🚀 **SHOW US YOUR BEST WORK.** Showcase **reliability, scalability, and automated cloud deployments** professionally.
