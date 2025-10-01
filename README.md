@@ -1,114 +1,103 @@
-# 🚀 Fusionpact DevOps Assessment — Junior/Intern DevOps Role
+# 🌟 Fusionpact DevOps Assessment Challenge 2026
 
-Welcome to the **Fusionpact DevOps Challenge 2026**.
-This assignment is designed to evaluate your **real-world DevOps skills** — from containerization and deployment to monitoring and automation — using industry-grade tools and practices.
-
----
-
-## 📄 Project Overview
-
-You are provided with a two-part application:
-1.  **Frontend (`./frontend/`):** A static HTML page (`Devops_Intern.html`) representing the program's landing page.
-2.  **Backend (`./backend/`):** A simple Python **FastAPI** application that manages user data (stored in a JSON file locally, which you may choose to migrate or manage persistence for) and exposes a **Prometheus metrics endpoint** at `/metrics`.
-
-Your objective is to **deploy, monitor, and automate** this project stack following the 3 stages described below.
+Welcome to the **Fusionpact DevOps Challenge**. This assignment is a real-world simulation designed to rigorously test your **end-to-end DevOps skillset**—from containerization and cloud deployment to monitoring and CI/CD automation.
 
 ---
 
-## 🧪 Task Levels
+## 🎯 The Application Stack
 
-### 🥇 Level 1: Mandatory Cloud Deployment & Persistence (30%)
+You are provided with a basic two-tier application stack:
 
-Your first goal is to containerize and deploy the application stack so it is **publicly accessible on a cloud platform**.
+| Component | Technology | Directory | Key Feature |
+| :--- | :--- | :--- | :--- |
+| **Frontend** | Static HTML/CSS | `./frontend/` | The Internship Program Landing Page. |
+| **Backend** | Python **FastAPI** | `./backend/` | Handles user data management and exposes a **Prometheus `/metrics` endpoint**. |
 
-1.  **Containerization:**
-    * Create a **`Dockerfile`** for the **backend** (FastAPI).
-    * Create a **`Dockerfile`** for the **frontend** (serve the static HTML using a lightweight server like Nginx).
-    * Use **`docker-compose.yml`** to orchestrate both services.
-2.  **Data Persistence:**
-    * The backend currently saves user data to a local JSON file (`users.json`). You must ensure this data persists even after the container is restarted or replaced. You can achieve this using:
-        * **Volume Mapping** for the JSON file.
-        * **(Optional Bonus)** Replace the file-based storage with a dedicated **PostgreSQL/MySQL** container and update the backend code.
-3.  **Deployment Requirement:**
-    * **❌ Local setup is not allowed.** You **must** deploy the entire containerized solution on a **Cloud Server** of your choice: **AWS, Google Cloud Platform (GCP), or Microsoft Azure**. The application must be publicly accessible via a browser URL.
-
-📦 **Deliverables:**
-* Live URL of the deployed frontend.
-* The `Dockerfile` and `docker-compose.yml` files.
-* A brief note on your choice of cloud services (e.g., EC2/ECS, Cloud Run, Kubernetes).
+Your primary objective is to take this codebase and transform it into a fully observable, persistent, and automatically deployable service in the cloud.
 
 ---
 
-### 🥈 Level 2: Monitoring & Observability (30%)
+## ⚠️ MANDATORY REQUIREMENT: Cloud Deployment & Documentation
 
-Implement a robust observability stack to monitor the health and performance of the backend service.
+This is not a local coding exercise. **All stages must be deployed and validated on a public cloud platform.**
 
-1.  **Monitoring Stack Setup:**
-    * Deploy **Prometheus** for metrics collection.
-    * Deploy **Grafana** for visualization.
-2.  **Configuration:**
-    * Configure **Prometheus** to scrape metrics from the backend's exposed `/metrics` endpoint.
-    * Configure Prometheus to monitor the basic health of the application containers (CPU, memory, uptime).
-3.  **Visualization:**
-    * Create at least **2 Dashboards** in Grafana:
-        * One for **System-Level Metrics** (e.g., CPU load, Memory usage of the host/containers).
-        * One for **Application-Level Metrics** (e.g., API response times, request counts, error rates from the backend).
-
-📦 **Deliverables:**
-* Configuration files used for Prometheus (e.g., `prometheus.yml`).
-* Screenshots of the functioning Grafana dashboards.
+* **Cloud Platforms:** AWS, Google Cloud Platform (GCP), or Microsoft Azure.
+* **Documentation:** A comprehensive **SOP (Standard Operating Procedure)** is mandatory for evaluation.
 
 ---
 
-### 🥉 Level 3: CI/CD Automation (30%)
+## 🧪 DevOps Task Levels
 
-Automate the process of building, testing, and deploying the backend application.
+This challenge is structured into three progressive levels.
 
-1.  **CI/CD Tool Selection:**
-    * Choose a CI/CD tool: **Jenkins, GitHub Actions, GitLab CI/CD,** or a cloud-native service.
-2.  **Pipeline Implementation:**
-    * Create a pipeline that triggers on code pushes to the main branch.
-    * The pipeline must include the following stages:
-        * **Code Checkout & Linting/Testing** (e.g., using `black` for the Python code).
-        * **Docker Image Build** for the backend service.
-        * **Docker Image Push** to a container registry (e.g., Docker Hub, ECR, GCR).
-        * **Deployment/Rolling Update** to the cloud environment.
+### 🥇 Level 1: Containerization & Cloud Deployment (30% Score Weight)
 
-📦 **Deliverables:**
-* The complete CI/CD pipeline configuration file (e.g., `Jenkinsfile`, `.github/workflows/main.yml`).
-* A screenshot of a successful pipeline run showing all stages.
+Focus on production-ready deployment and ensuring data integrity.
 
----
+| Action | Details |
+| :--- | :--- |
+| **1. Dockerize** | Create a `Dockerfile` for the **backend** (FastAPI) and a lightweight `Dockerfile` for the **frontend** (e.g., using Nginx to serve the static HTML). |
+| **2. Orchestration** | Write a **`docker-compose.yml`** file to define and link both the frontend and backend services. |
+| **3. Persistence** | The backend currently uses a local JSON file for data storage. **You must ensure this data persists** across container restarts. *Bonus points for migrating to a dedicated database container (PostgreSQL/MySQL) and updating the backend service.* |
+| **4. Deployment** | Deploy the entire stack using your orchestrator (`docker-compose` or equivalent YAML/config) onto a **Cloud Server/Service** (e.g., EC2, Cloud Run, App Service). |
 
-## 📑 Submission Requirements
-
-**Your submission will not be evaluated without a cloud deployment and SOP document.**
-
-1.  **Fork** this repository and push your solution to your GitHub account.
-2.  **Create a detailed SOP (Standard Operating Procedure)** document (PDF or Markdown) documenting:
-    * All steps and commands executed to build and deploy the stack.
-    * Screenshots of key stages (Container Build, Cloud Deployment Console, Grafana Dashboards, Successful Pipeline Run).
-3.  **Email the following to kiran.rakh@fusionpact.com:**
-    * 📎 Your **GitHub repository URL** (the forked version).
-    * 📎 A **short paragraph** explaining how you verified data persistence (Level 1).
-    * 📎 The **SOP document as an attachment**.
-    * 📎 Live frontend/backend URLs.
-    * 📎 Screenshots of Grafana dashboards.
-
-⚠️ **Important:** The SOP document **must not** be included in your repository.
+📦 **Deliverables:** Live Public URL, `Dockerfile` (x2), `docker-compose.yml`.
 
 ---
 
-## ✅ Evaluation Criteria
+### 🥈 Level 2: Monitoring & Observability Stack (30% Score Weight)
 
-| Category | Weight | Focus |
+Establish a robust monitoring solution using the industry standard.
+
+| Action | Details |
+| :--- | :--- |
+| **1. Service Integration** | Deploy **Prometheus** and configure it to effectively scrape application and system metrics. |
+| **2. Application Metrics** | Target the backend's `/metrics` endpoint to capture API request statistics, latency, and error rates. |
+| **3. Visualization** | Deploy **Grafana** and create at least **two high-quality, professional dashboards**: one for **System Health** (CPU, Memory, Disk I/O) and one for **Application Performance Monitoring (APM)**. |
+
+📦 **Deliverables:** Prometheus configuration file (`prometheus.yml`), Screenshots of Grafana Dashboards.
+
+---
+
+### 🥉 Level 3: CI/CD Automation Pipeline (30% Score Weight)
+
+Automate the process for rapid, reliable software delivery.
+
+| Action | Details |
+| :--- | :--- |
+| **1. Tool Selection** | Implement the pipeline using your preferred tool (e.g., **GitHub Actions**, **GitLab CI**, **Jenkins**). |
+| **2. Pipeline Stages** | Define a pipeline that includes the following stages on a push to the main branch: **Code Checkout** -> **Linting/Testing** -> **Docker Build** -> **Image Push to Registry** -> **Rolling Deployment** to the cloud environment. |
+
+📦 **Deliverables:** CI/CD pipeline configuration file (e.g., `.github/workflows/main.yml`), Screenshot of a successful pipeline run.
+
+---
+
+## 📑 Submission Instructions
+
+Failure to meet the submission format will result in non-evaluation.
+
+1.  **Fork** this repository and push your complete solution to your own GitHub account.
+2.  **SOP Document:** Create a **detailed Standard Operating Procedure (SOP)** (PDF or Markdown format is preferred). This SOP must include:
+    * The **architectural rationale** for your cloud service choices.
+    * **All commands** executed during setup.
+    * **Screenshots** verifying every major stage (deployment console, persistence test, monitoring setup).
+3.  **Email Submission:** Reply to the original task email and include:
+    * ✅ Your **GitHub Repository URL**
+    * ✅ A **short paragraph** summarizing your data persistence solution (Level 1).
+    * ✅ The **SOP document as an attachment** (Do NOT commit to the repo).
+    * ✅ Live URLs for the application and monitoring dashboards.
+
+---
+
+## ✅ Evaluation Criteria (100% Total)
+
+| Category | Weight | Focus Areas |
 | :--- | :--- | :--- |
-| **Cloud Deployment & Persistence** | 30% | Containerization, cloud service choice, and successful data persistence implementation. |
-| **Monitoring & Observability** | 30% | Correct configuration, effective and informative Grafana dashboards. |
-| **CI/CD Automation** | 30% | Clean, reliable, and logical pipeline stages with successful execution. |
-| **Documentation & SOP** | 10% | Clarity, detail, and professionalism of the Standard Operating Procedure. |
+| **Cloud Architecture & Persistence** | 30% | Correct containerization, effective volume/database setup, and secure public access. |
+| **Monitoring & Observability** | 30% | Scrape target accuracy, quality of visualization, and choice of relevant metrics. |
+| **CI/CD Automation** | 30% | Pipeline logic, reusability, proper artifact management (registry push), and successful automated deployment. |
+| **Documentation & SOP** | 10% | Clarity, detail, technical accuracy, and professional presentation of the SOP. |
 
 ---
 
-**Good Luck! 🚀**
-Show us how you think like a DevOps Engineer at **Fusionpact**.
+**Good Luck! 🚀** Show us how you engineer reliability, scalability, and automation.
