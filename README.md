@@ -78,7 +78,6 @@ Failure to meet the submission format will result in non-evaluation.
 
 1.  **Fork** this repository and push your complete solution to your own GitHub account.
 2.  **SOP Document:** Create a **detailed Standard Operating Procedure (SOP)** (PDF or Markdown format is preferred). This SOP must include:
-    * The **architectural rationale** for your cloud service choices.
     * All commands executed during setup.
     * Screenshots verifying every major stage (Cloud Deployment Console, Persistence Test, Monitoring Setup, Successful Pipeline Run).
 3.  **Email Submission:** Reply to the original task email and include:
