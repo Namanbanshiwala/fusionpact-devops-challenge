@@ -86,7 +86,7 @@ Welcome to the **Fusionpact DevOps Gauntlet**! This is your final opportunity to
 
 ---
 
-## 📧 SUBMISSION PROTOCOL
+## 📧 SUBMISSION PROTOCOL (10%)
 
 Your submission must be a single, professional package.
 
