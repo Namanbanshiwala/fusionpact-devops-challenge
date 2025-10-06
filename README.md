@@ -57,8 +57,7 @@ The assignment is divided into <b>3 levels</b>. Complete all tasks in each level
 **Deliverables:**
 - `Dockerfile` for frontend and backend  
 - `docker-compose.yml`  
-- Public URLs of frontend and backend  
-- Screenshot of the deployed application
+- Screenshot of the deployed application *(Document this in your SOP)*
 
 ---
 
