@@ -30,8 +30,8 @@ resource "aws_security_group" "my_security_group" {
     description = "HTTP from anywhere"
   }
   ingress {
-    from_port   = 5173
-    to_port     = 5173
+    from_port   = 8080
+    to_port     = 8080
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
     description = "my node app from anywhere"
