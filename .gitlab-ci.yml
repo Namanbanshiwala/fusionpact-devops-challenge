@@ -1,0 +1,86 @@
+stages:
+  - build and push
+  - trivy file scan
+  - deploy
+  - trivy image scan
+
+variables:
+  DOCKER_HOST: tcp://docker:2376
+  DOCKER_TLS_CERTDIR: "/certs"
+
+build-frontend:
+  stage: build and push
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - echo $DOCKERHUB_PASS | docker login -u $DOCKERHUB_USER --password-stdin
+  script:
+    - cd frontend
+    - docker build -t $DOCKERHUB_USER/fusionpact-frontend:latest .
+    - docker push $DOCKERHUB_USER/fusionpact-frontend:latest
+  rules:
+    - changes:
+        - frontend/**/*
+      when: on_success
+
+build-backend:
+  stage: build and push
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - echo $DOCKERHUB_PASS | docker login -u $DOCKERHUB_USER --password-stdin
+  script:
+    - cd backend
+    - docker build -t $DOCKERHUB_USER/fusionpact-backend:latest .
+    - docker push $DOCKERHUB_USER/fusionpact-backend:latest
+  rules:
+    - changes:
+        - backend/**/*
+      when: on_success
+
+trivy-file-scan:
+  stage: trivy file scan
+  image:
+    name: aquasec/trivy:latest
+    entrypoint: [""]
+  script:
+    - trivy fs .
+
+deploy-compose:
+  stage: deploy
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - echo $DOCKERHUB_PASS | docker login -u $DOCKERHUB_USER --password-stdin
+  script:
+    - echo "Deploying with Docker Compose"
+    - docker-compose down || true
+    - docker-compose up -d
+    - docker ps
+  artifacts:
+    paths:
+      - docker-compose.yml
+    expire_in: 1 hour
+
+trivy-scan-frontend:
+  stage: trivy image scan
+  image:
+    name: aquasec/trivy:latest
+    entrypoint: [""]
+  script:
+    - trivy image $DOCKERHUB_USER/fusionpact-frontend:latest
+  dependencies:
+    - build-frontend
+
+trivy-scan-backend:
+  stage: trivy image scan
+  image:
+    name: aquasec/trivy:latest
+    entrypoint: [""]
+  script:
+    - trivy image $DOCKERHUB_USER/fusionpact-backend:latest
+  dependencies:
+    - build-backend
